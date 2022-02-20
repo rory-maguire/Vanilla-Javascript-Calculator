@@ -1,0 +1,98 @@
+body {
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(to bottom right, pink, white);
+}
+
+* {
+	font-size: 1em;
+}
+
+.plus {
+	grid-area: plus;
+}
+.minus {
+	grid-area: minus;
+}
+.times {
+	grid-area: times;
+}
+.divide {
+	grid-area: divide;
+}
+.zero {
+	grid-area: zero;
+}
+.one {
+	grid-area: one;
+}
+.two {
+	grid-area: two;
+}
+.three {
+	grid-area: three;
+}
+.four {
+	grid-area: four;
+}
+.five {
+	grid-area: five;
+}
+.six {
+	grid-area: six;
+}
+.seven {
+	grid-area: seven;
+}
+.eight {
+	grid-area: eight;
+}
+.nine {
+	grid-area: nine;
+}
+.equals {
+	grid-area: equals;
+	background-color: orange;
+}
+.clear {
+	grid-area: clear;
+}
+
+.decimal {
+	grid-area: decimal;
+}
+
+.plus,
+.times,
+.minus,
+.divide {
+	background-color: lightgrey;
+}
+
+.container {
+	border: 1px solid grey;
+	box-shadow: 1px 10px 50px;
+	margin: 10em;
+}
+.buttons {
+	height: 500px;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	font-size: 3em;
+	grid-template-areas:
+		"plus minus times divide"
+		"seven eight nine equals"
+		"four five six equals"
+		"one two three equals"
+		"zero decimal clear  equals";
+}
+
+.display {
+	background-color: lightsteelblue;
+	height: 150px;
+	width: 500px;
+	border: 1px solid grey;
+}
