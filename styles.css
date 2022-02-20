@@ -9,6 +9,7 @@ body {
 
 * {
 	font-size: 1em;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .plus {
@@ -95,4 +96,9 @@ body {
 	height: 150px;
 	width: 500px;
 	border: 1px solid grey;
+	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 5em;
 }
