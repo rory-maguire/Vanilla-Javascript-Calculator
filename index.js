@@ -12,6 +12,10 @@ const display = document.querySelector(".display");
 const buttonsArray = Array.from(buttons);
 //add event listener to console.log value of each button onClick
 
+//by default, add value of whatever is pressed to the display
+//if equals is hit, use eval() to calculate result
+//if C is hit, set the value to empty string
+
 buttonsArray.map((button) => {
 	button.addEventListener("click", (e) => {
 		console.log(e.target.innerText);
